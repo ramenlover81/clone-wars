@@ -72,29 +72,34 @@
     ctx.lineJoin = 'round';
     ctx.strokeStyle = '#120d25';
     ctx.lineWidth = 3;
-    ctx.fillStyle = '#9ee7ff';
+    // An original twin-fish plush: one red fish, one green fish, under a dark hood.
+    ctx.fillStyle = '#24203a';
     ctx.beginPath();
-    ctx.moveTo(-16, 0);
-    ctx.lineTo(-5, -8);
-    ctx.lineTo(13, -5);
-    ctx.lineTo(17, 0);
-    ctx.lineTo(13, 5);
-    ctx.lineTo(-5, 8);
+    ctx.arc(0, 0, 16, Math.PI, 0);
+    ctx.lineTo(14, 13);
+    ctx.lineTo(-14, 13);
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
-    ctx.fillStyle = '#5b41c8';
+
+    ctx.fillStyle = '#e9525b';
     ctx.beginPath();
-    ctx.moveTo(-8, 0);
-    ctx.lineTo(7, -14);
-    ctx.lineTo(4, 0);
-    ctx.lineTo(7, 14);
+    ctx.ellipse(-6, 3, 9, 6, 0, 0, Math.PI * 2);
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
-    ctx.fillStyle = '#f7f4ff';
-    ctx.fillRect(7, -2, 6, 4);
-    ctx.strokeRect(7, -2, 6, 4);
+    ctx.fillStyle = '#72c967';
+    ctx.beginPath();
+    ctx.ellipse(6, 3, 9, 6, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = '#fff4db';
+    ctx.beginPath();
+    ctx.arc(-8, 1, 2, 0, Math.PI * 2);
+    ctx.arc(4, 1, 2, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#bca6e8';
+    ctx.fillRect(-12, 12, 24, 3);
     ctx.restore();
   }
 
