@@ -31,8 +31,8 @@
         const context = getAudio();
         if (!context) return;
         const start = context.currentTime;
-        tone(context, start, 250, 430, 0.12, 0.11, 'sine');
-        tone(context, start + 0.025, 510, 630, 0.09, 0.045, 'triangle');
+        tone(context, start, 420, 610, 0.07, 0.12, 'triangle');
+        tone(context, start + 0.075, 610, 790, 0.07, 0.1, 'sine');
       } catch (error) { }
     },
     score: function () {
@@ -49,8 +49,8 @@
         const context = getAudio();
         if (!context) return;
         const start = context.currentTime;
-        tone(context, start, 220, 70, 0.28, 0.15, 'sawtooth');
-        tone(context, start + 0.035, 130, 48, 0.23, 0.07, 'triangle');
+        tone(context, start, 260, 145, 0.18, 0.16, 'triangle');
+        tone(context, start + 0.22, 210, 95, 0.22, 0.15, 'triangle');
       } catch (error) { }
     }
   };
